@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using T10bank.Models;
 
@@ -17,10 +14,11 @@ namespace T10bank.Controllers
         {
             _context = context;
         }
+
         //lista Transações
         public async Task<IActionResult> Index()
         {
-            return View(_context.Deals.ToListAsync());
+            return View(await _context.Deals.ToListAsync());
         }
 
         //adicionando transação
