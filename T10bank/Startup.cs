@@ -53,7 +53,7 @@ namespace T10bank
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Deal}/{action=Index}/{id?}");
             });
         }
     }

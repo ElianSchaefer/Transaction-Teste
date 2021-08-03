@@ -10,8 +10,8 @@ using T10bank.Models;
 namespace T10bank.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20210803134803_DealDB")]
-    partial class DealDB
+    [Migration("20210803225534_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
