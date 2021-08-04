@@ -21,6 +21,19 @@ namespace T10bank.Controllers
             return View(await _context.Deals.ToListAsync());
         }
 
+        //[HttpGet]
+        //public async Task<IActionResult> Index(string Dealsearch)
+        //{
+        //    ViewData["Getdealdetails"] = Dealsearch;
+
+        //    var dealquery = from x in _context.Deals select x;
+        //    if (!string.IsNullOrEmpty(Dealsearch))
+        //    {
+        //        dealquery = dealquery.Where(x => x.Company.Contains(Dealsearch));
+        //    }
+        //    return View(await dealquery.AsNoTracking().ToListAsync());
+        //}
+
         //adicionando transação
         [HttpGet]
         public IActionResult MakeDeal()

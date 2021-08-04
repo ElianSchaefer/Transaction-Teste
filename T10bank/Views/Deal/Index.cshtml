@@ -4,11 +4,21 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Transaction</h1>
 
 <p>
-    <a asp-action="MakeDeal">Realizar uma Transação</a>
+    <a asp-action="MakeDeal">Make Transaction</a>
 </p>
+
+@*<form method="get" asp-action="Index">
+    <p>
+        <input type="search" placeholder="" value="@ViewData["Getdealdetails"]" name="Dealsearch" style="width:500px;" />
+        <input type="submit" value="Seach" class="btn btn-primary" />
+        <a asp-action="Index">Get All Transictions</a>
+    </p>
+
+</form>*@
+
 <table class="table">
     <thead>
         <tr>
